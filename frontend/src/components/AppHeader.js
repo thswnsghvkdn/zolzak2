@@ -1,7 +1,7 @@
 import React from "react"
 import {  Navbar, Nav } from 'react-bootstrap'
-function AppHeader() {
-    return(
+class AppHeader extends React.Component {
+    render = () => {return(
         <div>
         <Navbar bg="primary" variant="dark" style={{  marginBottom: '2%' }}>
             <Nav className="mr-auto" >
@@ -10,7 +10,7 @@ function AppHeader() {
             </Nav>
         </Navbar>
         </div>
-    );
+    );}
 }
 
 export default AppHeader;
